@@ -1,4 +1,5 @@
 #!/bin/bash
+<<<<<<< HEAD
 
 # Check if the user provided a URL as an argument
 if [ $# -ne 1 ]; then
@@ -24,3 +25,7 @@ fi
 # Display the size in bytes
 echo "$content_length"
 
+=======
+# A Bash script that takes in a URL, sends a request and displays the size of the body of the response
+curl -sI "$1" | grep "Content-Length:" | cut -d " " -f 2
+>>>>>>> 3421b805a9ffe372e59fbf2e5bb91945cc8cb7c1
