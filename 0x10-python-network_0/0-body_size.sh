@@ -23,4 +23,3 @@ fi
 
 # Display the size in bytes
 echo "$content_length"
-
